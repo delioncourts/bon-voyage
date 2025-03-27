@@ -1,0 +1,12 @@
+@use '../base/colors';
+
+.footer {
+  max-width: 100%;
+  max-height: 200px;
+}
+
+.copyright {
+  padding-top: 20px;
+  &__text {
+  }
+}
