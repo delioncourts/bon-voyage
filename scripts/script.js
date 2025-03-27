@@ -1,8 +1,11 @@
 const popup = document.querySelector('.popup');
 const popupOpenButton = document.querySelector('.send');
+const canvas = document.getElementById('custom_canvas');
+const jsConfetti = new JSConfetti({ canvas })
 
 popupOpenButton.addEventListener('click', () => {
             popup.classList.add('popup_opened');
+            jsConfetti.addConfetti();
             document.addEventListener("keydown", closePopupEsc);
             document.addEventListener("mousedown", closePopupOverlay);
 })
